@@ -3,6 +3,7 @@ library(dplyr)
 library(readxl)
 library(shiny)
 source("../dots_home/show_tests.R")
+source("../dots_home/utils.R")
 source("utils.R")
 
 read_test_info("../dots_home/data/longgold_codebook_new.xlsx")
