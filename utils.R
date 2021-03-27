@@ -44,7 +44,7 @@ add_extra_info <- function(config){
 
 get_config <- function(input){
   test_ids <- setdiff(names(input), c("language", "quests"))
-  tests <- map_dfr(test_ids, function(ti){
+  tests <- purrr::map_dfr(test_ids, function(ti){
     value <- input[[ti]]
     if(nchar(value) > 0){
       tibble(name  = ti, length = as.integer(value), type = "performance_test")
