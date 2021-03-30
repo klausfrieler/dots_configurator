@@ -6,7 +6,7 @@ source("../dots_home/show_tests.R")
 source("../dots_home/utils.R")
 source("utils.R")
 
-read_test_info("../dots_home/data/longgold_codebook_new.xlsx")
+read_test_info("../dots_home/data/dots_test_def.xlsx")
 assign("dots_test_params", 
        readxl::read_xlsx("./data/dots_test_params.xlsx") %>% 
          mutate(across(rel_cronbach_alpha:sem, as.numeric)), 
